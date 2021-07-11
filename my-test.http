@@ -1,0 +1,19 @@
+@hostname = http://localhost:5000
+
+post {{hostname}}/auth/login 
+Content-Type: application/json
+
+{
+  "email": "john",
+  "password": "changeme"
+}
+
+###
+
+post {{hostname}}/api/registration
+Content-Type: application/json
+
+{
+  "email": "lipinvideo@mail.ru",
+  "password": "123456"
+}
